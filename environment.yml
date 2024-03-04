@@ -20,4 +20,5 @@ dependencies:
   - pip 
   - pip:
     - pillow
-    
+    - Quote2Image
+    - matplotlib
