@@ -4,9 +4,9 @@ import helper
 
 
 TOPIC = "kannada_inspire"         # Available topics: christian, fitness
-SHOW_AUTHOR = False         # Shows the author of the quote under the quote (if available)
+SHOW_AUTHOR = True        # Shows the author of the quote under the quote (if available)
 CUSTOMER_NAME = "Avalokana"
-NUM_OF_POSTS = 2           # Disable limit: -1 (will create images according to the amount of quotes in the .txt file)
+NUM_OF_POSTS = -1           # Disable limit: -1 (will create images according to the amount of quotes in the .txt file)
 
 ''' To create a new topic, please follow these steps:
 1. Create a {topic}.txt file inside /sources/text_data
@@ -27,12 +27,12 @@ images_folder_cropped = f"{images_folder}/cropped"
 images_folder_cropped_darken = f"{images_folder_cropped}/darken"
 text_file = f"{project_dir}/sources/text_data/{TOPIC}.txt"
 # quote_font = f"{project_dir}/sources/fonts/MouldyCheeseRegular-WyMWG.ttf"       # Bible
-quote_font = f"{project_dir}/sources/fonts/Kedage Bold.ttf"       # Aneka Kannada  
-quote_font = f"{project_dir}/sources/fonts/tungab.ttf"       # Aneka Kannada
+quote_font = f"{project_dir}/sources/fonts/tungab.ttf"       # Aneka Kannada  
+# quote_font = f"{project_dir}/sources/fonts/tungab.ttf"       # Aneka Kannada
 # quote_font = f"{project_dir}/sources/fonts/JuliaMono-Black.ttf"       # Aneka Kannada
 # quote_font = f"{project_dir}/sources/fonts/Bebas-KM7y.ttf"       # Fitness
 # author_font = f"{project_dir}/sources/fonts/MangabeyRegular-rgqVO.otf"
-author_font = f"{project_dir}/sources/fonts/Nirmala.ttf"
+author_font = f"{project_dir}/sources/fonts/Tunga Regular.ttf"
 output_folder = f"{project_dir}/generated/{TOPIC}"
 logo_file = f"{project_dir}/sources/logo.png"
 

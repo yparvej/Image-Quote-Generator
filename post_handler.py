@@ -113,7 +113,6 @@ def create_post(image_file, quote_text, quote_font, author_font, output_path, fi
     # Load selected font
     print(f"Creating post for {customer_name} with {quote_font} font")
     quote_font = ImageFont.truetype(font=f'{quote_font}', encoding="unic" , size=75)
-
     # Create DrawText object
     draw = ImageDraw.Draw(im=img)
 
