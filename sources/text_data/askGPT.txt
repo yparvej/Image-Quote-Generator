@@ -8,6 +8,7 @@ Don't put the quotation marks.
 Only write quotes with max 15 words or less.
 Make sure there are no duplicates.
 Don't number them, Just write one per line
+Make sure there are no duplicates.
 
 
 For Canva:

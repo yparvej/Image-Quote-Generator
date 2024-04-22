@@ -3,6 +3,9 @@ import csv
 from PIL import Image, ImageEnhance
 import os
 
+# Constants
+IMAGE_WIDTH = 1920
+IMAGE_HEIGHT = 1080
 
 def split_string(string, max_chars_per_line):
     words = string.split()
@@ -63,7 +66,7 @@ def darken_images(images_folder, output_folder):
 
 def cut_images_old(images_folder, output_folder):
     # Set the target size
-    target_size = (1080, 1350)
+    target_size = (IMAGE_WIDTH, IMAGE_HEIGHT) # (1080, 1350)
     # Loop through all the images in the directory
     for filename in os.listdir(images_folder):
         if filename.endswith(".jpg") or filename.endswith(".png"):
@@ -90,7 +93,7 @@ def cut_images_old(images_folder, output_folder):
 
 def cut_images(images_folder, output_folder):
     # Set desired ratio
-    desired_ratio = 1080 / 1350
+    desired_ratio = IMAGE_WIDTH / IMAGE_HEIGHT # 1080 / 1350
 
     # Loop through all files in input folder
     for filename in os.listdir(images_folder):
@@ -120,8 +123,10 @@ def cut_images(images_folder, output_folder):
             img = img.crop((left, top, right, bottom))
 
             # Resize the image if necessary
-            if img.size != (1080, 1350):
-                img = img.resize((1080, 1350))
+            # if img.size != (1080, 1350):
+            #     img = img.resize((1080, 1350))
+            if img.size != (IMAGE_WIDTH, IMAGE_HEIGHT):
+                img = img.resize((IMAGE_WIDTH, IMAGE_HEIGHT))    
 
             # Save the image to output folder
             img.save(os.path.join(output_folder, filename))

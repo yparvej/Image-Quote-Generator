@@ -3,7 +3,7 @@ import post_handler
 import helper
 
 
-TOPIC = "kannada_inspire"         # Available topics: christian, fitness
+TOPIC = "worldbookday"         # Available topics: christian, fitness
 SHOW_AUTHOR = True        # Shows the author of the quote under the quote (if available)
 CUSTOMER_NAME = "Avalokana"
 NUM_OF_POSTS = -1           # Disable limit: -1 (will create images according to the amount of quotes in the .txt file)
@@ -32,7 +32,7 @@ quote_font = f"{project_dir}/sources/fonts/tungab.ttf"       # Aneka Kannada
 # quote_font = f"{project_dir}/sources/fonts/JuliaMono-Black.ttf"       # Aneka Kannada
 # quote_font = f"{project_dir}/sources/fonts/Bebas-KM7y.ttf"       # Fitness
 # author_font = f"{project_dir}/sources/fonts/MangabeyRegular-rgqVO.otf"
-author_font = f"{project_dir}/sources/fonts/Tunga Regular.ttf"
+author_font = f"{project_dir}/sources/fonts/tungab.ttf"
 output_folder = f"{project_dir}/generated/{TOPIC}"
 logo_file = f"{project_dir}/sources/logo.png"
 
